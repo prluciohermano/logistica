@@ -25,8 +25,7 @@ import lombok.NoArgsConstructor;
 public class ItemPedido {
 
     @Id
-    @GeneratedValue(generator = "increment")
-	@GenericGenerator(name = "increment", strategy = "increment")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
